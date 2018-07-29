@@ -9,6 +9,9 @@
 import Cocoa
 
 class ViewController: NSViewController {
+    
+    @IBOutlet weak var label: NSTextField!
+    @IBOutlet weak var textField: NSTextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,14 @@ class ViewController: NSViewController {
         didSet {
         // Update the view, if already loaded.
         }
+    }
+    
+    @IBAction func didPushButton(_ sender: Any) {
+        var inputText = textField.stringValue
+        if inputText.isEmpty {
+            inputText = "Empty"
+        }
+        label.stringValue = inputText
     }
 
 
