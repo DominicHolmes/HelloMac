@@ -32,6 +32,18 @@ class ViewController: NSViewController {
         }
         label.stringValue = inputText
     }
+    
+    @IBAction func didSelectHello(_ sender: Any) {
+        label.stringValue = "HELLO"
+    }
+    
+    @IBAction func didSelectWorld(_ sender: Any) {
+        label.stringValue = "🌎🌎🌎🌎🌎"
+    }
+    
+    @IBAction func didTakeItEasy(_ sender: Any) {
+        label.stringValue = "Check out Atlantic City -.o"
+    }
 
 
 }

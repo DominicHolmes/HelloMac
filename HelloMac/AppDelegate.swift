@@ -12,7 +12,10 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
 
-
+    @IBOutlet weak var helloMenuItem: NSMenuItem!
+    @IBOutlet weak var worldMenuItem: NSMenuItem!
+    @IBOutlet weak var easyMenuItem: NSMenuItem!
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
     }
